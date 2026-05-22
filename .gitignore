@@ -1,0 +1,94 @@
+# ============================================================================
+# Unreal Engine 5 — .gitignore
+# Proyecto: FTP9G (Flight Trainer Platform 9G)
+# Engine: UE 5.3 | Stack: C++ + GitHub Copilot
+# ============================================================================
+
+# --- Visual Studio / Rider / VSCode ---------------------------------------
+.vs/
+.vscode/
+.idea/
+*.suo
+*.opensdf
+*.sdf
+*.opendb
+*.VC.db
+*.VC.opendb
+*.user
+*.userprefs
+*.code-workspace
+
+# --- Unreal Engine: directorios autogenerados -----------------------------
+# NUNCA versionar — UE los regenera al abrir el proyecto.
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+.ignore
+
+# Plugins de terceros: regenerar
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+
+# --- Archivos de proyecto autogenerados -----------------------------------
+*.VC.db
+*.opensdf
+*.opendb
+*.sdf
+*.sln
+*.suo
+*.xcodeproj
+*.xcworkspace
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+# Mantener .uproject (CRÍTICO — es el manifiesto del proyecto).
+!*.uproject
+
+# --- Logs y temporales ----------------------------------------------------
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# --- Binarios y dumps -----------------------------------------------------
+*.dll
+*.exe
+*.pdb
+*.exp
+*.lib
+*.dmp
+*.app
+
+# --- Crashes y telemetría locales -----------------------------------------
+Crashes/
+LocalProfiling/
+Profiling/
+
+# --- Build outputs de FTP9G ----------------------------------------------
+# Builds finales se distribuyen aparte, nunca por git.
+/Builds/
+/Packaging/
+/Output/
+
+# --- Datos sensibles ------------------------------------------------------
+# CRÍTICO: ningún dato operacional de escuela entra al repo público.
+secrets.json
+*.key
+*.pem
+*.pfx
+.env
+.env.local
+
+# --- Cache de Copilot / GitHub ------------------------------------------
+.copilot/
+.github/copilot-instructions.local.md
+
+# --- Localization Packs privados ------------------------------------------
+# Los packs por país viven en assets data y se distribuyen aparte.
+/Content/LocalizationPacks/*/Private/

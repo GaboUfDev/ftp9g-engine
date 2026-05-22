@@ -1,0 +1,81 @@
+{
+  "AircraftId": "TP-150-RG",
+  "DisplayName": "TP-150 RG",
+  "Manufacturer": "FTP9G Reference",
+  "DataSource": "public",
+  "Version": "0.1",
+  "LastUpdated": "2026-05-22",
+  "Notes": "Avión de referencia del proyecto. Pistón monomotor, tren retráctil, motor Rotax 915 iS. Parámetros conservadores basados en aviones equivalentes de su clase (categoría LSA/CS-23 ligero). Sujeto a refinamiento en Fase 10 con FlightModelRealisticPiston.",
+
+  "Geometry": {
+    "WingSpanMeters": 9.5,
+    "WingAreaSqMeters": 12.0,
+    "AspectRatio": 9.7,
+    "MeanChordMeters": 1.27,
+    "FuselageLengthMeters": 7.2
+  },
+
+  "Mass": {
+    "EmptyKg": 480.0,
+    "MaxTakeoffKg": 750.0,
+    "FuelCapacityLiters": 120.0,
+    "CenterOfGravityMeters": { "X": 0.0, "Y": 0.0, "Z": 0.0 }
+  },
+
+  "Aero": {
+    "CL_Alpha": 5.7,
+    "CL_Max": 1.4,
+    "CL_0": 0.25,
+    "CD_0": 0.027,
+    "OswaldEfficiency": 0.80,
+    "StallAngleOfAttackDeg": 16.0
+  },
+
+  "Engine": {
+    "Model": "Rotax 915 iS",
+    "MaxPowerHP": 141.0,
+    "MaxContinuousPowerHP": 135.0,
+    "MaxRPM": 5800.0,
+    "IdleRPM": 1800.0,
+    "FuelFlowMaxLitersPerHour": 38.0,
+    "bIsTurbocharged": true,
+    "bHasFADEC": true
+  },
+
+  "Performance": {
+    "StallSpeedClean_kts": 45.0,
+    "StallSpeedFlaps_kts": 38.0,
+    "CruiseSpeed_kts": 130.0,
+    "MaxSpeedVne_kts": 165.0,
+    "ServiceCeiling_ft": 18000.0,
+    "MaxClimbRate_fpm": 1200.0,
+    "MaxLoadFactorG": 4.0,
+    "MinLoadFactorG": -2.0
+  },
+
+  "LandingGear": {
+    "Type": "retractable",
+    "MaxGearOperatingSpeed_kts": 100.0,
+    "MaxGearExtendedSpeed_kts": 130.0,
+    "GearTransitionTimeSeconds": 6.0
+  },
+
+  "Flaps": {
+    "MaxFlapsExtendedSpeed_kts": 95.0,
+    "Settings": [
+      { "DeflectionDeg": 0,  "Label": "UP" },
+      { "DeflectionDeg": 10, "Label": "TO" },
+      { "DeflectionDeg": 25, "Label": "APP" },
+      { "DeflectionDeg": 35, "Label": "LDG" }
+    ]
+  },
+
+  "Limits": {
+    "Va_kts": 110.0,
+    "Vno_kts": 140.0,
+    "Vne_kts": 165.0,
+    "Vfe_kts": 95.0,
+    "Vlo_kts": 100.0,
+    "Vle_kts": 130.0
+  }
+}
