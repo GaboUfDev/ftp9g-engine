@@ -2,7 +2,7 @@
 
 > **Flight Trainer Platform 9G**
 > Plataforma de entrenamiento de vuelo — **NO es un juego**.
-> Stack: Unreal Engine 5.3 + C++ + GitHub Copilot. Filosofía "Editor-last".
+> Stack: Unreal Engine 5.7 + C++ + GitHub Copilot. Filosofía "Editor-last".
 
 ---
 
@@ -53,7 +53,7 @@ ftp9g-engine/
 - [ ] `git push -u origin main`
 
 ### 3. Crear proyecto UE5
-- [ ] Abrir Epic Games Launcher → Unreal Engine 5.3
+- [ ] Abrir Epic Games Launcher → Unreal Engine 5.7
 - [ ] **Games → Blank → C++** (no Blueprint)
 - [ ] Nombre: `FTP9G`, ubicación: la carpeta del repo
 - [ ] **Starter Content: OFF**, **Raytracing: OFF** (lo activamos después si vale la pena)
